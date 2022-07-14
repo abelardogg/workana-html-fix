@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html> <!-- inicio del html -->
+  <html lang="es"> <!-- Lenguaje Español -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head> <!-- Inicio del Encabezado -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+ <title>Generador de Tickets &copy</title> <!-- Titulo de la Wed -->
+<script type="text/javascript" src="file:///C:/Users/Lenovo/Desktop/js/json.js"></script>
+<script type="text/javascript" src="file:///C:/Users/Lenovo/Desktop/js/motorAjax.js"></script>
+<script type="text/javascript" src="file:///C:/Users/Lenovo/Desktop/js/funciones.js"></script>
+<script type="text/javascript" src="file:///C:/Users/Lenovo/Desktop/js/funcionesJSmin.js"></script>
+<!-- CALENDARIO -->
+<script type="text/javascript" src="file:///C:/Users/Lenovo/Desktop/js/calendar.js"></script>
+<script type="text/javascript" src="file:///C:/Users/Lenovo/Desktop/js/calendar-es.js"></script>
+<script type="text/javascript" src="file:///C:/Users/Lenovo/Desktop/js/calendar-setup.js"></script>
+<script type="text/javascript" src="file:///C:/Users/Lenovo/Desktop/js/validacion.js"></script>
+<!--<link href="css/bootstrap.min.css" rel="stylesheet">!-->
+<!--<link href="css/templatemo_justified.css" rel="stylesheet">-->
+<link href="css/calendario.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/hojaEstilo.css" media="all" />
+<link rel="stylesheet" href="css/main.css" media="all" />
+
+<link rel="stylesheet" href="css/style-tickets.css" />                             
+<link rel="stylesheet" href="css/style-tickets-print.css" media="print" />               
+</head>
+
+<body background="7.png"><!-- Imagen de fondo. -->
+   <p><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></p>
+      <body style="background-color:#ffffff;"> <!-- Inicio del Cuerpo, de color blanco -->
+
+<center><span style="color: navy; font-size: 300%;">Sistema de Gesti&oacute;n de Tickets</span></center><br /><!-- Subtitulo Numero 7 Centrado -->	
+		
+<div id="imp">
+<center><table width="200" border="2"><tr><td class="CENTRO">03-06-2022 - 14:50:45</td></tr></table>
+  <table width="200" border="2">
+  <tr>
+    <td class="CENTRO"><center>En Linea</center></td>
+  </tr>
+
+</table>
+<table width="200" border="2">
+  	
+	<tr class="alt"><td colspan="2"><center>Se genero un ticket nuevo!</center></td></tr>
+	<tr class="DIEZ"><td width="100" class="DOCE"><b>Usuario</td>
+	<td width="200" height="22" class="SEIS"><font size="5px">PFWC</td>
+	</tr>
+	<tr class="DIEZ"><td width="300" class="DOCE"><b>Clave</td>
+	<td width="200" height="22" class="SEIS"><font size="5px">A68J</td>
+	</tr>
+	<tr class="DIEZ"><td width="300" class="DOCE"><b>Tiempo</td>
+	<td width="200" height="22" class="SEIS"><font size="3px">1 Hora</td>
+	</tr>
+	<tr class="DIEZ"><td width="300" class="DOCE"><b>Costo</td>
+	<td width="200" height="22" class="SEIS"><font size="3px">2000 Bs</td>
+</table></center>
+</div>
+<script type="text/javascript">	
+function imprSelec(imp)
+{var ficha=document.getElementById(imp);var ventimp=window.open(' ','popimpr');ventimp.document.write(ficha.innerHTML);ventimp.document.close();ventimp.print();ventimp.close('index.php');}
+</script>
+<center><table width="200" border="0">
+<tr>
+    <td class="CENTRO">
+<a onclick="javascript:imprSelec('imp');" href="file:///C:/Users/WAITD%20CA/Desktop/Yostin.html"><center>Imprimir</center></a>
+</td>
+</tr>
+</table></center><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+<script>
+ const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const times = urlParams.get('estado');
+const table = document.querySelector(".ticket");
+const imp = document.querySelector("#imp");
+
+for ( lef i = 0; i < (times-1); i++) {
+     imp.appendChild(table.cloneNode(true));
+}
+</script>
+						
+<center><h4>Desarrollado por Dwaygner Yostin &copy</h4><!-- Empieza el pie de Pagina Centrado -->
+La Paragua</center><!-- Termina el pie de Pagina Centrado -->
+</div></center><!-- fin del marco de botones-->
+  </body> <!-- Fin del Cuerpo. -->
+</html> <!-- fin del html. -->
