@@ -1,56 +1,80 @@
 ﻿<!DOCTYPE html> <!-- inicio del html -->
-  <html lang="es"> <!-- Lenguaje Español -->
-    <head> <!-- Inicio del Encabezado -->
-      <meta http-equiv="refresh" content="60"> <!-- Actualiza el contenido en 60 segundos -->
-        <title>Generador de Tickets &copy</title> <!-- Titulo de la Wed -->
-    </head> <!-- Fin de Encabezado. -->
+<html lang="es">
+<!-- Lenguaje Español -->
 
-<style>A {text-decoration: none;} </style><!-- Cancelacion del subrayado de todos los hipervinculos -->
+<head>
+  <!-- Inicio del Encabezado -->
+  <meta http-equiv="refresh" content="60"> <!-- Actualiza el contenido en 60 segundos -->
+  <title>Generador de Tickets &copy</title> <!-- Titulo de la Wed -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <style>
+    a {
+      text-decoration: none;
+    }
 
-      <body background="7.png"><!-- Imagen de fondo. -->
-      <p><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></p>
-      <body style="background-color:#ffffff;"> <!-- Inicio del Cuerpo, de color blanco -->
+    .text-center {
+      text-align: center;
+    }
+  </style><!-- Cancelacion del subrayado de todos los hipervinculos -->
+</head> <!-- Fin de Encabezado. -->
 
-<center><span style="color: navy; font-size: 300%;">Sistema de Gesti&oacute;n de Tickets</span></center><!-- Subtitulo Numero 7 Centrado -->
-<center><div id="marco"><!-- Inicio del marco de botones -->
-<div id="headerPanel">
-<div id="itemProveedores" class="centrarText">
-<p><a href="file:///C:/Users/WAITD%20CA/Desktop/tickes.html"><img title="Generar Usuario" src="1.png" alt="Imagen Usuarios" width="200px" height="200px" /></a>
-<a href="datos.php"><img title="Base de Datos" src="2.png" alt="Imagen Base de Datos" width="200px" height="200px" /></a>
-<a href="enlinia.php"><img title="Usuarios en Linea" src="3.png" alt="Imagen Usuarios en Linea" width="200px" height="200px" /></a>
 
-<a href="file:///C:/Users/Lenovo/Desktop/tickes.html"><br />Generar Usuario &nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp;&nbsp;</a>
-<a href="datos.php">Base de datos</a>
-<a href="enlinia.php">&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp&nbsp&nbsp;&nbsp;Usuarios en Linia</a></p>
-</div>
-<div id="itemProveedores" class="centrarText">
-<p><a href="datos.php"></a></p>
-</div>
-<div id="itemProveedores" class="centrarText">
-<p><a href="enlinia.php"></a></p>
-</div>
-<div id="itemCompras" class="centrarText">
-<p><a href="hotspot1.php"><img title="Usuarios Hotspot" src="4.png" alt="imagen Usuarios Hotspot" width="200" height="200" /></a>
-<a href="venta.php"><img title="Ventas" src="5.png" alt="imagen Ventas" width="200" height="200" /></a>
-<a href="configuraciones.php"><img title="Configuracion" src="6.png" alt="imagen Configuracion" width="200" height="200" /></a>
+<body>
+  <!-- Imagen de fondo. -->
+  <div class="text-center" style="width: 100%;">
+    <img src="7b.png" alt="imagen de fondo" style="max-width: 100%">
+  </div>
 
-<a href="hotspot1.php"><br />Ver Usuarios Creados&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-<a href="venta.php">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ventas&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a>
-<a href="configuraciones.php">&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp;&nbsp;&nbsp;Configuracion</a></p>
-</div>
-<div id="itemCompras" class="centrarText">
-<p><a href="venta.php"></a></p>
-</div>
-<div id="itemCompras" class="centrarText">
-<p><a href="configuraciones.php"></a></p>
-</div>
-</div>
-<center><h4>Desarrollado por Dwaygner Yostin &copy</h4><!-- Empieza el pie de Pagina Centrado -->
-La Paragua</center><!-- Termina el pie de Pagina Centrado -->
-</div>
-    </center><!-- fin del marco de botones-->
-  </body> <!-- Fin del Cuerpo. -->
+
+  <div class="text-center">
+    <span style="color: navy; font-size: 300%;">Sistema de Gesti&oacute;n de Tickets</span>
+  </div>
+  <!-- Subtitulo Numero 7 Centrado -->
+  <div class="text-center">
+    <div id="marco">
+      <!-- Inicio del marco de botones -->
+      <div id="headerPanel">
+        <div id="itemProveedores" style="display: flex; justify-content: center; flex-wrap: wrap;">
+          <a href="tickes.html" style="display: flex; flex-direction: column; align-items: center">
+            <img title="Generar Usuario" src="1.png" alt="Imagen Usuarios" width="200px" height="200px" />
+            <span>Generar Usuario</span>
+          </a>
+          <a href="datos.php" style="display: flex; flex-direction: column; align-items: center">
+            <img title="Base de Datos" src="2.png" alt="Imagen Base de Datos" width="200px" height="200px" />
+            <span>Base de datos</span>
+          </a>
+          <a href="enlinia.php" style="display: flex; flex-direction: column; align-items: center">
+            <img title="Usuarios en Linea" src="3.png" alt="Imagen Usuarios en Linea" width="200px" height="200px" />
+            <span>Usuarios en Linea</span>
+          </a>
+        </div>
+
+
+
+
+
+        <div id="itemCompras" style="display: flex; justify-content: center; flex-wrap: wrap;">
+          <a href="hotspot1.php" style="display: flex; flex-direction: column; align-items: center">
+            <img title="Usuarios Hotspot" src="4.png" alt="imagen Usuarios Hotspot" width="200" height="200" />
+            <span>Ver Usuarios</span>
+          </a>
+          <a href="venta.php" style="display: flex; flex-direction: column; align-items: center">
+            <img title="Ventas" src="5.png" alt="imagen Ventas" width="200" height="200" />
+            <span>Ventas</span>
+          </a>
+          <a href="configuraciones.php" style="display: flex; flex-direction: column; align-items: center">
+            <img title="Configuracion" src="6.png" alt="imagen Configuracion" width="200" height="200" />
+            <span>Configuracion</span>
+          </a>
+        </div>
+        
+      </div>
+      <div class="text-center">
+        <h4>Desarrollado por Dwaygner Yostin &copy</h4><!-- Empieza el pie de Pagina Centrado -->
+        La Paragua
+      </div><!-- Termina el pie de Pagina Centrado -->
+    </div>
+  </div><!-- fin del marco de botones-->
+</body> <!-- Fin del Cuerpo. -->
+
 </html> <!-- fin del html. -->
